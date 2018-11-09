@@ -5,6 +5,6 @@ class CreateAnswerChoices < ActiveRecord::Migration[5.2]
       t.text :answer_choice, null: false
       t.timestamps
     end
-    add_index :answer_choices, :question_id, unique: true
+    add_index :answer_choices, :question_id
   end
 end

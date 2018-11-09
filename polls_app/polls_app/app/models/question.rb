@@ -10,8 +10,8 @@
 #
 
 class Question < ApplicationRecord
-  validates :body, presence: true
-  validates :poll_id, presence: true, uniqueness: true
+  # validates :body, presence: true
+  # validates :poll_id, presence: true, uniqueness: true
 
   has_many :answer_choices,
     primary_key: :id,

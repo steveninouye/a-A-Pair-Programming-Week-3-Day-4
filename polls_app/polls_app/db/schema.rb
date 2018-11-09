@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2018_11_08_234133) do
     t.text "answer_choice", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["question_id"], name: "index_answer_choices_on_question_id", unique: true
+    t.index ["question_id"], name: "index_answer_choices_on_question_id"
   end
 
   create_table "polls", force: :cascade do |t|
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2018_11_08_234133) do
     t.text "body", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["poll_id"], name: "index_questions_on_poll_id", unique: true
+    t.index ["poll_id"], name: "index_questions_on_poll_id"
   end
 
   create_table "responses", force: :cascade do |t|

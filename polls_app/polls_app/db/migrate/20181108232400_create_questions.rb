@@ -5,6 +5,6 @@ class CreateQuestions < ActiveRecord::Migration[5.2]
       t.text :body, null: false
       t.timestamps
     end
-    add_index :questions, :poll_id, unique: true
+    add_index :questions, :poll_id
   end
 end
