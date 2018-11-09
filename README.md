@@ -6,5 +6,5 @@
 
 ## Completed By
 
-- Student 1
-- Student 2
+- Rikey Chen
+- Steven Inouye
